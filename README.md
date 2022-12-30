@@ -22,6 +22,8 @@ The program starts by displaying a main menu with a list of numbers to choose fr
 
 The user can enter any of the numbers corresponding with what they want to do.
 
+Any changes made to the database while the program is running will remain in the database file. (project_database.db)
+
 Once the user has selected an option, the console will ask the user for any info needed to run and display the SQLite queries.
 
 The user can enter 0 at the main menu to quit and end the program.
