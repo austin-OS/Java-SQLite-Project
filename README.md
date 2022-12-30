@@ -17,7 +17,7 @@ To run this program, make sure that you have the following software installed on
 
 5 - The program will now be running in the console window.
 
-## The Program
+## Usage
 The program starts by displaying a main menu with a list of numbers to choose from.
 
 The user can enter any of the numbers corresponding with what they want to do.
