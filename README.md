@@ -19,7 +19,12 @@ To run this program, make sure that you have the following software installed on
 
 ## The Program
 The program starts by displaying a main menu with a list of numbers to choose from.
-The user can enter any of the numbers corresponding with what they want to do, or 0 to quit and end the program.
+
+The user can enter any of the numbers corresponding with what they want to do.
+
+Once the user has selected an option, the console will ask the user for any info needed to run and display the SQLite queries.
+
+The user can enter 0 at the main menu to quit and end the program.
 
 # Author
 Austin Greer - 11.22.2022
