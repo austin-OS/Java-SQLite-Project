@@ -14,18 +14,9 @@ import java.util.*;
  */
 
 public class Main {
-	
-	/**
-	 *  The database file name.
-	 */
+
 	private static String DATABASE = "project_database.db";
-	
-    /**
-     * Connects to the database if it exists, creates it if it does not, and returns the connection object.
-     * 
-     * @param databaseFileName the database file name
-     * @return a connection object to the designated database
-     */
+
     public static Connection initializeDB(String databaseFileName) {
         String url = "jdbc:sqlite:" + databaseFileName;
         Connection conn = null;
@@ -33,8 +24,8 @@ public class Main {
             conn = DriverManager.getConnection(url);
             if (conn != null) {
                 DatabaseMetaData meta = conn.getMetaData();
-                System.out.println("The driver name is " + meta.getDriverName());
-                System.out.println("The connection to the database was successful.");
+                System.out.println("Driver: " + meta.getDriverName());
+                System.out.println("Database onnection successful.");
             } else {
             	System.out.println("Null Connection");
             }
@@ -45,14 +36,6 @@ public class Main {
         return conn;
     }
     
-    /**
-     * Queries the database and prints the results.
-     * 
-     * @param conn a connection object
-     * @param sql a SQL statement that returns rows
-     * This query is written with the Statement class, typically 
-     * used for static SQL SELECT statements
-     */
     public static void sqlSelectQuery(Connection conn, String sql){
         try {
         	Statement stmt = conn.createStatement();
